@@ -1,0 +1,109 @@
+%----------------- A LaTeX Template for the Weekly Progress Reports -------------------%
+%------------------------------------------------------------------------------------------------------------%
+\documentclass[]{scrartcl}
+
+% Encode input as utf8
+\usepackage[utf8]{inputenc}
+
+% Tabular extensions
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{colortbl}
+\tcbuselibrary{skins}
+%-----------------------------------------package includes-------------------------------------------%
+
+% Document Setup
+
+\title{SENG3150 - Weekly Progress Report}
+\author{name, name, \and name, and name}
+\date{\today}
+
+% Custom table theme. 
+\tcbset{
+	tab1/.style={	enhanced,
+				fonttitle=\bfseries,
+				fontupper=\normalsize\sffamily,
+				colback=yellow!10!white,
+				colframe=blue!50!black,
+				colbacktitle=cyan!40!white,
+				coltitle=black,
+				center title,
+			}
+}
+
+% Custom table spacing
+\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
+
+\begin{document}
+	
+	\maketitle
+	
+	% Table 1 - Meeting Times
+	\begin{tcolorbox}[	
+					tab1, 
+					tabularx={X | Y | Y | Y | Y | Y},
+					title=Meeting Times,
+					boxrule=0.5pt	]
+		Date & aTime & Start (hh:mm) & aTime & Finish (hh:mm) & aTime \\
+	\end{tcolorbox}
+
+	% Table 2 - Progress 
+	\begin{tcolorbox}[	tab1,
+					title= Project Progress,
+					boxrule=0.5pt	]
+		\begin{itemize}
+			\item To be filled with text. \\
+		\end{itemize}
+	\end{tcolorbox}
+	
+	% Table 3 - Planning/ Issues 
+	\begin{tcolorbox}[	tab1,
+					title= Project Plan and Issues,
+					boxrule=0.5pt	]
+		To be filled with text. \\
+	\end{tcolorbox}
+	
+	% Table 4 - Assigned Tasks 
+	\begin{tcolorbox}[	tab1, 
+					tabularx={X | X | X | X | },
+					title=Assigned Tasks,
+					boxrule=0.5pt	]
+		Member Name & Task & Deliverable & Status \\\hline\hline
+		
+		% Entry 1
+		name & 
+		Convert the horrible 'Weekly Progress Report' template into something more elegant. &
+		 See Documentation Repo 
+		& Completed \date{4/03/14}
+		
+		%Entry 2 etc
+		
+	\end{tcolorbox}
+	
+	% Table 5 - Additional Comments
+	\begin{tcolorbox}[	tab1, 
+					title=Comments,
+					boxrule=0.5pt	]
+		To be filled with interesting comments. \\ 
+	\end{tcolorbox}
+	
+	% Table 6 - Member Declarations
+	\begin{tcolorbox}[	tab1, 
+					tabularx={X | X | X },
+					title=Digital Signatures,
+					boxrule=0.5pt	]
+		% Column Labels	
+		Member Name & Signature & Date \\\hline\hline
+		
+		% Entries
+		name & & \date{07/03/14} \\\hline
+		name & & \date{07/03/14} \\\hline
+		name & & 07/03/14 \\\hline
+		name & & 07/03/14 \\
+		
+	\end{tcolorbox}
+	
+	
+\end{document}

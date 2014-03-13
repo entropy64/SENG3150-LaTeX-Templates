@@ -1,0 +1,121 @@
+% -------------------------------------------------------------------------------------------------% 
+%-------------------------------- Copyright (c) 2014  ---------------------------------------%
+%-------------------------------- 	   name	       ---------------------------------------%
+
+\documentclass[english,12pt]{scrartcl}
+
+%---------------------------------Package Imports ------------------------------------------%
+\usepackage[]{babel}
+
+% Encodes the document UTF8
+\usepackage[utf8]{inputenc}
+
+% Headers and Footers
+\usepackage[]{scrpage2}
+
+% Hyperlinks
+\usepackage{hyperref}
+
+% Include References in TOC
+\usepackage[nottoc,numbib]{tocbibind}
+
+% For restructuring bibsection
+%--------------------------------------------------------------------------------------------------%
+% Preamble
+
+% Document Title and Author
+\title{FlightPub Requirements Model}
+\author{name, name, \and name, and name}
+
+% Header and Footer
+\pagestyle{scrheadings}
+\ihead{\today}
+\ohead{FlightPub Requirements Model}
+
+% START OF CONTENT
+\begin{document}
+	\maketitle
+	\vfill
+	{\large
+		\begin{description}
+			\item [Status:] Research 1
+			\item [Version:] 0.1
+		\end{description}
+	}
+	\clearpage
+	\tableofcontents
+	\vfill
+	\section{Document Notes}
+		\begin{tabular}{ | p{0.1\textwidth} | p{0.6\textwidth} | p{0.3\textwidth} |}
+			\hline
+			\textbf{Version} & \textbf{Changes} & \textbf{Author} \\
+			\hline
+
+			0.1 &
+			Initial Document Structure &
+			name \\
+			\hline
+			
+		\end{tabular}
+		
+	\clearpage
+	
+	\section{Introduction} {
+		Intro notes. I assume this is a brief summary on how you arrived at your model.
+	}
+	
+	% Describe Actors of the System.
+	\section{Actors} {
+		\subsection{Actor Definitions} {
+			Probably include a simple table for representing this. Or as below:
+			
+			\subsubsection{Actor} { 
+				definition.
+			}
+		}
+		\subsection{Actor Diagram} {
+			Insert Actor Diagram here.
+		}
+	}
+	
+	% Look at the Tikz package.
+	\section{Use Case Diagrams} {
+	
+		\subsection{Module 1} {
+			Insert Module 1 Use Case Diagram.
+			Etc.
+		}
+	}
+	
+	\section{Use Case Scenarios} {
+	
+		\subsection{Module 1} {
+			Description of scenario. Etc.
+		}
+	}
+	
+	\section{Use Case Diagrams} {
+	
+		\subsection{Module 1} {
+			Insert Module 1 Use Case Diagram.
+			Etc.
+		}
+	}
+	
+	\section{Database } {
+	
+		\subsection{Domain Dictionary} {
+			Etc.
+		}
+		
+		\subsection{Mapping Table} {
+			Etc.
+		}
+	}
+	\clearpage
+	
+	\bibliographystyle{plain} {
+		\bibliography{references}
+	}
+	
+\end{document}

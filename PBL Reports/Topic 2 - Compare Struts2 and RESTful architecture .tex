@@ -1,0 +1,131 @@
+% -------------------------------------------------------------------------------------------------% 
+%------------------------- Copyright (c) 2014 name ------------------------%
+
+\documentclass[]{scrartcl}
+%-------------------------------------package includes-------------------------------------%
+
+% Encode input as utf8 to keep .bib file consistent
+\usepackage[utf8]{inputenc}
+
+% Enables headers and footers
+\usepackage[]{scrpage2}
+
+% Makes links in contents hyperlinked
+\usepackage{hyperref}
+
+\usepackage[nottoc,numbib]{tocbibind}
+
+% Tabular extensions
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{colortbl}
+\tcbuselibrary{skins}
+
+%--------------------------------------------------------------------------------------------------%
+% Set Up
+\title{Compare Struts 2 and Restful architecture}
+\author{Name}
+\date{\today}
+
+% Custom table theme. 
+\tcbset{
+	tab1/.style={	enhanced,
+				fonttitle=\bfseries,
+				fontupper=\normalsize\sffamily,
+				colback=yellow!10!white,
+				colframe=blue!50!black,
+				colbacktitle=cyan!40!white,
+				coltitle=black,
+				center title,
+			}
+}
+
+% Custom table spacing
+\newcolumntype{Y}{>{\raggedleft\arraybackslash}X}
+
+% Header and Footer
+\pagestyle{scrheadings}
+\ihead{\today}
+\ohead{PBL Report - Compare Struts 2 and Restful architecture}
+
+% -------------------- Document Begin -------------------------%
+\begin{document}
+\maketitle
+\vfill
+	{\large
+		\begin{description}
+			\item [Status:] Research 1
+			\item [Version:] 0.1
+		\end{description}
+	}
+
+	\clearpage
+	\tableofcontents
+	\vfill
+	
+	\section{Document Notes} {
+		\begin{tabular}{ p{0.1\textwidth} | p{0.6\textwidth} | p{0.3\textwidth} }
+			\textbf{Version} & \textbf{Changes} & \textbf{Author} \\
+			\hline
+
+			0.1 &
+			Initial Document Structure &
+			name \\
+			\hline
+
+			0.2 &
+			Further Research Notes &
+			name \\
+			\hline
+		\end{tabular}
+	}	
+	\clearpage
+
+	\section{Abstract} {
+		
+		% Table 2 - Topic 
+		\begin{tcolorbox}[	tab1,
+						title= PBL Report - Topic 2,
+						boxrule=0.5pt	]
+			Describe what the Restful architecture is and compare the differences between the two frameworks. Justify your choice of the architecture for the project.
+		\end{tcolorbox}
+		
+		TODO: abstract.
+	}
+	\clearpage
+	
+	\section{Introduction} {
+		Etc.
+	}
+	\clearpage
+	
+	\section{Research Discussion}
+		\subsection{RESTful Architecture} {
+			% This cites the thesis of Roy Fielding  
+			Etc. Cite Fielding somewhere here. \cite{fielding2000}
+		}
+		\clearpage
+		
+		\subsection{Apache Struts2} {
+			Etc.
+		}	
+		\clearpage
+	
+	\clearpage
+	
+	\section{Comparative Study} {
+		Etc.
+	}
+	\clearpage
+	
+	\section{Conclusion} {
+		Etc.
+	}
+	\clearpage
+	
+	\bibliographystyle{plain} {
+		\bibliography{Topic2}
+	}
+\end{document}

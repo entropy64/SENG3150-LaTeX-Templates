@@ -1,0 +1,10 @@
+.DS_Store
+*.out
+*.aux
+*.log
+*.gz
+*.pdf
+*.toc
+*.synctex
+TSWLatexianTemp*
+*.swp

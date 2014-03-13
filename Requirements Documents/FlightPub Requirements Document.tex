@@ -1,0 +1,128 @@
+% -------------------------------------------------------------------------------------------------% 
+%-------------------------------- Copyright (c) 2014  ---------------------------------------%
+%-------------------------------- 	   name	       ---------------------------------------%
+
+\documentclass[english,12pt]{scrartcl}
+
+%---------------------------------Package Imports ------------------------------------------%
+\usepackage[]{babel}
+
+% Encodes the document UTF8
+\usepackage[utf8]{inputenc}
+
+% Headers and Footers
+\usepackage[]{scrpage2}
+
+% Hyperlinks
+\usepackage{hyperref}
+
+% Include References in TOC
+\usepackage[nottoc,numbib]{tocbibind}
+
+% For restructuring bibsection
+%--------------------------------------------------------------------------------------------------%
+% Preamble
+
+% Document Title and Author
+\title{FlightPub Requirements Document}
+\author{name, name, \and name, and name}
+
+% Header and Footer
+\pagestyle{scrheadings}
+\ihead{\today}
+\ohead{FlightPub Requirements Document}
+
+% References
+
+
+% START OF CONTENT
+\begin{document}
+	\maketitle
+	\vfill
+	{\large
+		\begin{description}
+			\item [Status:] Research 1
+			\item [Version:] 0.1
+		\end{description}
+	}
+	\clearpage
+	\tableofcontents
+	\clearpage
+	
+	\section{Document Notes}
+		\begin{tabular}{ | p{0.1\textwidth} | p{0.6\textwidth} | p{0.3\textwidth} |}
+			\hline
+			\textbf{Version} & \textbf{Changes} & \textbf{Author} \\
+			\hline
+
+			0.1 &
+			Initial Document Structure &
+			name \\
+			\hline
+
+			0.2 &
+			Conforms to IEEE Standard 830-1998 \cite{IEEE830} &
+			name \\
+			\hline
+		\end{tabular}
+		
+	\clearpage
+	
+	\section{Introduction} {
+	
+		\subsection{Purpose} {
+			Describe the purpose of this document.
+		}
+		\subsection{Scope} {
+			\begin{itemize}
+				\item[a)] Identify the software product(s) to be produced by name;
+				\item[b)] Explain what the software product(s) will, and, if necessary, describe any Non-Goals;
+				\item[c)] Describe the application of the software being specified including relevant benefits, objectives, and goals;			
+				\item[d)] Aim to be consistent with other documents you prepare, for example the Requirments Model document.
+			\end{itemize}
+		}
+	
+		\subsection{Definitions, Acronyms, Abbreviations}{
+			Define all domain-specific terminology etc.
+		}
+		\subsection{References} {
+			See the end of this report for references.
+		}
+		\clearpage
+	}
+	
+	\section{Functional Requirements} {
+		\subsection{A functional Requirement} {
+			Describe the functional requirment.
+		}
+		\subsection{A functional Requirement} {
+			Describe the functional requirment.
+		}
+		\subsection{ETC} {
+			etc.
+		}
+	}
+	\clearpage
+	
+	\section{Non-Functional Requirements} {
+		\subsection{System Constraints} {
+			\subsubsection{Performance Requirements} {
+				etc.
+			}
+			
+			\subsubsection{Security Requirements} {
+				etc.
+			}
+			
+			\subsubsection{Maintainability etc} {
+				etc.
+			}
+		}
+	}
+	\clearpage
+	
+	\bibliographystyle{plain} {
+		\bibliography{references}
+	}
+	
+\end{document}
